@@ -4,7 +4,7 @@ import * as DatavParticle from '../package/index'
 const rise = ref()
 onMounted(() => {
   console.log(rise.value)
-  new DatavParticle.rise({
+  new DatavParticle.textLine({
     el:rise.value,
     size:900,
     textSize:200,

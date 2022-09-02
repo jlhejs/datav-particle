@@ -69,8 +69,7 @@ new textLine({
 datav-partice粒子特效方法:
 
 ## rise 配置项
-![logo](https://raw.githubusercontent.com/ZLMediaKit/ZLMediaKit/master/www/logo.png)
-
+![image](https://raw.githubusercontent.com/kouhunzhe/datav-particle/master/public/rise.gif)
   - el - 必传 document.getElementById("datavPartice") 
   - size- 气泡数量  默认为 100
   - background - canvas 背景色支持渐变 默认为 linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)
@@ -89,8 +88,9 @@ datav-partice粒子特效方法:
 }
 ```
 ## textLine 配置项
+![image](https://raw.githubusercontent.com/kouhunzhe/datav-particle/master/public/textLine.gif)
   - el - 必传 document.getElementById("datavPartice") 
-  - size - 气泡数量  默认为 100
+  - text - 文字 默认为 DatavPartice
   - background - canvas 背景色支持渐变 默认为 linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6)
   - speed - 气泡上升速度 默认为 0.2
   - min - 气泡最小半径 默认为 1
