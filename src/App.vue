@@ -4,11 +4,13 @@ import * as DatavParticle from '../package/index'
 const rise = ref()
 onMounted(() => {
   console.log(rise.value)
-  new DatavParticle.textLine({
+  new DatavParticle.rise({
     el:rise.value,
-    textColor:"#adcf12",
+    size:900,
     textSize:200,
-    speed: 0.2
+    speed: 0.8,
+    min:1,
+    max:10
   })
   rise.value // <div>
 })

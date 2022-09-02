@@ -2,11 +2,13 @@ function rise(options) {
   
   const WIDTH = (options.el.clientWidth || options.el.offsetWidth || options.el.scrollWidth)
   const HEIGHT = options.el.clientHeight || options.el.offsetHeight || options.el.scrollHeight;
-  
+  options.speed = options.speed ||0.2
+  options.min = options.min ||1
+  options.max = options.max ||10
   let ctx = document.createElement('canvas'),
       content = ctx.getContext('2d'),
       round = [],
-      initRoundPopulation = options.size||80;
+      initRoundPopulation = options.size||100;
   ctx.width = WIDTH;
   ctx.height = HEIGHT;
   options.el.appendChild(ctx);
@@ -15,7 +17,7 @@ function rise(options) {
       this.index = index;
       this.x = x;
       this.y = y;
-      this.r = Math.random() * 5 + 1;
+      this.r = options.min + Math.floor((options.max-options.min) * Math.random());
       var alpha = (Math.floor(Math.random() * 10) + 1) / 10 / 2;
       this.color = "rgba(255,255,255," + alpha + ")";
   }
