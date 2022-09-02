@@ -1,7 +1,7 @@
 {
   "name": "datav-particle",
-  "private": true,
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.0.1",
   "type": "module",
   "homepage": "https://github.com/kouhunzhe/datav-particle",
   "author": {
